@@ -1,22 +1,23 @@
 {
-  "name": "interactiveportfolio",
+  "name": "lab450_web",
   "version": "1.0.0",
   "description": "Responsive portfolio website",
-  "main": "main.js",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eunsoossi/InteractivePortfolio.git"
+    "url": "git+https://github.com/eunsoossi/Lab450_web.git"
   },
   "author": "Eunsoo Kim",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eunsoossi/InteractivePortfolio/issues"
+    "url": "https://github.com/eunsoossi/Lab450_web/issues"
   },
-  "homepage": "https://github.com/eunsoossi/InteractivePortfolio#readme",
-  "dependencies": {
-    "node-sass": "^4.12.0"
-  }
+  "homepage": "https://github.com/eunsoossi/Lab450_web#readme"
 }
