@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eunsoo Kim - Works</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+</head>
+
+<body id="bg-img">
+    <div class="overlay"></div>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="labs.html" class="nav-link">Labs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="portfolioPage">
+        <div class="nameTitle">
+            <div class="fakeTitle">
+                <h1 class="lg-heading">
+                    <a href="index.html" class="home">
+                        <span class="myName">Eunsoo</span> <span class="text-secondary">Kim</span>
+                    </a>
+                </h1>
+            </div>
+        </div>
+        <div class="portfolio">
+            <div class="portfolioTitle">
+                <h1 class="pTitle">마음온도 37도 캠페인</h1>
+                <p>소외아동 난방비 지원 - 목도리 뜨기 캠페인</p>
+                <div class="filmLink">
+                    <a href="#videostory" class="button more" id="videolink">
+                        <i class="fas fa-play"></i>&nbsp; Watch Video 
+                    </a>
+                    <div id="videostory" class="mfp-hide">
+                        <iframe height="600" src="https://www.youtube.com/embed/uNMYw6fjq6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioGrid">
+                <article>
+                    <div class="popol">
+                        <!-- <div class="toneblack"></div> -->
+                        <img class="portfolio-img" src="img/works/lotte1.jpg" alt="posco">
+                    </div>
+                </article>
+                <div class="explain">
+                    <p>롯데월드몰에서 진행된 모금 행사의 홍보영상입니다.
+                        <br>게릴라 콘서트로 시민들과 함께하며, 소외아동들을 위한 목도리 뜨기 캠페인을 열었습니다.</p>
+                </div>
+                <article>
+                    <div class="popol">
+                        <!-- <div class="toneblack"></div> -->
+                        <img class="portfolio-img" src="img/works/lotte4.jpg" alt="posco">
+                    </div>
+                </article>
+                <div class="explain">
+                    <p>마음온도37도는 추운 날, 소외아동들이 따뜻함을 느낄 수 있도록 난방비 지원금 마련을 위한 목도리 뜨기 캠페인 입니다.</p>
+                </div>
+                <div class="popolPages">
+                    <div class="popolGrid">
+                        <article>
+                            <div class="popol">
+                                <!-- <div class="toneblack"></div> -->
+                                <img class="portfolio-img" src="img/works/lotte2.jpg" alt="posco">
+                            </div>
+                        </article>
+                        <article>
+                            <div class="popol">
+                                <!-- <div class="toneblack"></div> -->
+                                <img class="portfolio-img" src="img/works/lotte3.jpg" alt="posco">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="info">
+                        <div class="crew1">Crew</div>
+                        <div class="crew2">Client</div>
+                        <div class="crew3">Lotte</div>
+                        <div class="crew2">Agency</div>
+                        <div class="crew3">Salvation Army Korea</div>
+                        <div class="crew2">Production</div>
+                        <div class="crew3">Eunsoo Kim</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        &copy; 2019 DarakLab All Right Reserved
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/fb4df1e67f.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#videolink').magnificPopup ({
+                type:'inline',
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });         
+        });
+    </script>
+</body>
+</html>

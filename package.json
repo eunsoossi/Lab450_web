@@ -1,0 +1,22 @@
+{
+  "name": "interactiveportfolio",
+  "version": "1.0.0",
+  "description": "Responsive portfolio website",
+  "main": "main.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eunsoossi/InteractivePortfolio.git"
+  },
+  "author": "Eunsoo Kim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eunsoossi/InteractivePortfolio/issues"
+  },
+  "homepage": "https://github.com/eunsoossi/InteractivePortfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
