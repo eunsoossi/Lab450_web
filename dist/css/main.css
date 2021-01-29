@@ -59,14 +59,14 @@
       background-size: 100%;
       background-position: center;
       border-radius: 50%;
-      border: solid 3px #40f8bb; }
+      border: solid 3px #ff0062; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #40f8bb; }
+      color: #ff0062; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -78,7 +78,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #40f8bb; }
+      color: #ff0062; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -127,7 +127,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #40f8bb; }
+  color: #ff0062; }
 
 main {
   padding: 0.5rem;
@@ -139,7 +139,7 @@ main {
       padding: 0.1rem;
       color: rgba(177, 177, 177, 0.157); }
       main .icons a:hover {
-        color: #40f8bb;
+        color: #ff0062;
         transition: all 0.5s ease-out; }
   main .nameTitle {
     padding: 1.5rem; }
@@ -170,15 +170,63 @@ article {
   position: absolute;
   height: 500px;
   width: 100%;
-  background-color: #14120f;
+  background-color: #4d4d4d;
   left: 0;
   opacity: 0.2;
   transition: all 1s ease; }
   .toneblack:hover {
-    background-color: rgba(20, 18, 15, 0);
+    background-color: rgba(0, 0, 0, 0.24);
     transition: all 0.5s ease-out; }
 
-.gmarket .projectText,
+_________________________________________________________________ article {
+  position: relative;
+  text-align: center; }
+
+.categoryArticle-img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover; }
+
+.categoryToneblack {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  background-color: rgba(182, 182, 182, 0.24);
+  left: 0;
+  opacity: 0.9;
+  transition: all 1s ease; }
+  .categoryToneblack:hover {
+    background-color: rgba(0, 0, 0, 0.24);
+    transition: all 0.5s ease-out; }
+
+___________________________________ .gmarket .categoryText,
+.gen315 .categoryText,
+.starbucks360 .categoryText,
+.skt .categoryText {
+  color: black; }
+
+.categoryText {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.705);
+  transition: all 0.5s ease-out;
+  z-index: 1;
+  transform: translate(-50%, -50%); }
+
+.headCategorytext {
+  font-size: 100px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 1; }
+
+.subheadCategorytext {
+  font-size: 10px;
+  font-weight: 500; }
+
+_________________________________ .gmarket .projectText,
 .gen315 .projectText,
 .starbucks360 .projectText,
 .skt .projectText {
@@ -353,8 +401,13 @@ article {
   object-fit: cover; }
 
 .otherVideoText {
+  position: absolute;
+  bottom: 1%;
+  text-align: left;
+  color: white;
+  transition: all 0.5s ease-out;
   padding: 2rem;
-  z-index: 0; }
+  z-index: 1; }
 
 .others {
   position: absolute;
@@ -415,7 +468,7 @@ article {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #40f8bb;
+    background: #ff0062;
     color: black; }
 
 .btn-dark {
@@ -437,11 +490,19 @@ article {
   .workGrid {
     grid-template-columns: repeat(2, minmax(400px, 1fr)); }
   .portfolio-img {
-    height: 800px; } }
+    height: 800px; }
+  .headCategorytext {
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -1px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .workGrid {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); }
+  .headCategorytext {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -1px; }
   .portfolio-img {
     height: 500px; }
   .posco .projectText {
@@ -461,6 +522,10 @@ article {
 @media screen and (max-width: 768px) {
   .workGrid {
     grid-template-columns: repeat(1, minmax(300px, 1fr)); }
+  .headCategorytext {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -1px; }
   .posco .projectText {
     color: black;
     transition: all 0.5s ease-out; }
@@ -509,6 +574,10 @@ article {
       height: 100px; } }
 
 @media screen and (max-width: 500px) {
+  .headCategorytext {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -1px; }
   .toneblack {
     position: absolute;
     height: 500px;

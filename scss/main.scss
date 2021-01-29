@@ -106,16 +106,85 @@ article {
     position: absolute;
     height: $mainPage-imageHeight;
     width: 100%;
-    background-color: rgb(20, 18, 15);
+    // background-color: rgb(20, 18, 15);
+    background-color: rgb(77, 77, 77);
     left: 0;
     opacity: 0.2;
     transition: all 1s ease;
 
     &:hover {
-        background-color: rgba(20, 18, 15, 0);
+        // background-color: rgba(20, 18, 15, 0);
+        background-color: rgba(0, 0, 0, 0.24);
         @include easeOut();
     }
 }
+
+// Categorise Grid
+_________________________________________________________________
+
+article {
+    position: relative;
+    text-align: center;
+}
+
+.categoryArticle-img {
+    height: $mainPage-imageHeight;
+    width: 100%;
+    object-fit: cover;
+}
+
+.categoryToneblack {
+    position: absolute;
+    height: $mainPage-imageHeight;
+    width: 100%;
+    background-color: rgba(182, 182, 182, 0.24);
+    left: 0;
+    opacity: 0.9;
+    transition: all 1s ease;
+
+    &:hover {
+        // background-color: rgba(20, 18, 15, 0);
+        background-color: rgba(0, 0, 0, 0.24);
+        @include easeOut();
+    }
+}
+// index page(Category) Name Text
+___________________________________
+.gmarket,
+.gen315,
+.starbucks360,
+.skt {
+    .categoryText {
+        color: rgb(0, 0, 0);
+    }
+}
+
+.categoryText {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    // text-shadow: -2px 0 rgba(0, 0, 0, 0), 0 2px rgba(0, 0, 0, 0), 2px 0 rgb(255, 0, 85), 0 -2px rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.705);
+    @include easeOut();
+    z-index: 1;
+    // border: 3px solid #73AD21;
+    transform: translate(-50%, -50%);
+}
+.headCategorytext {
+    font-size: 100px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.subheadCategorytext {
+    font-size: 10px;
+    font-weight: 500;
+    
+}
+_________________________________
 
 // Project Name Text --------
 .gmarket,
@@ -331,8 +400,13 @@ article {
 }
 
 .otherVideoText {
+    position: absolute;
+    bottom: 1%;
+    text-align: left;
+    color: white;
+    @include easeOut();
     padding: 2rem;
-    z-index: 0;
+    z-index: 1;
 }
 
 .others {
