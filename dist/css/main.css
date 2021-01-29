@@ -520,7 +520,7 @@ _________________________________ .gmarket .projectText,
   .workGrid {
     grid-template-columns: repeat(1, minmax(300px, 1fr)); }
   .headCategorytext {
-    font-size: 40px; }
+    font-size: 10px; }
   .posco .projectText {
     color: black;
     transition: all 0.5s ease-out; }
@@ -570,7 +570,18 @@ _________________________________ .gmarket .projectText,
 
 @media screen and (max-width: 500px) {
   .headCategorytext {
-    font-size: 40px; }
+    font-size: 10px; }
+  .categoryToneblack {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.76);
+    left: 0;
+    opacity: 0.2;
+    transition: all 1s ease; }
+    .categoryToneblack:hover {
+      background-color: rgba(0, 0, 0, 0.24);
+      transition: all 0.5s ease-out; }
   .toneblack {
     position: absolute;
     height: 500px;
